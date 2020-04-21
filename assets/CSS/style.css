@@ -1,0 +1,101 @@
+:root {
+    font-size: 10px;
+}
+
+body {
+    background: linear-gradient(90deg, rgba(1,80,35,1) 0%, rgba(1,143,141,1) 51%, rgba(0,212,255,1) 100%);
+}
+
+.container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    height: 85vh;
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 15px;
+    grid-row-gap: 0px;
+    height: 60vh;
+}
+
+.user-side { 
+    background: rgba(255, 255, 255, 0.664);
+    grid-area: 1 / 1 / 2 / 2;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.result-side { 
+    background: rgba(255, 255, 255, 0.664);
+    grid-area: 1 / 2 / 2 / 3; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.computer-side { 
+    background: rgba(255, 255, 255, 0.664);
+    grid-area: 1 / 3 / 2 / 4; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+h1 {
+    color: white;
+    font-size: 3.6rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.8rem;
+}
+
+p {
+    font-size: 2rem;
+}
+
+button {
+    background-color: #252525;
+    color: white;
+    border: none;
+    margin: 30px auto;
+    padding: 8px 15px;
+    width: 220px;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+button:hover {
+    box-shadow: 3px 6px 6px 0px rgba(0,0,0,0.75); 
+}
+
+figure {
+    margin-top: 70px;
+}
+
+img {
+    width: 300px;
+    height: auto;
+}
+
+.user-side p, .computer-side p {
+    margin-top: 60px;
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+
+.result-side p {
+    font-size: 2.4rem;
+    margin-top: 100px;
+}
+
+.result-side .result {
+    font-weight: 600;
+}

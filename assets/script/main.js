@@ -1,7 +1,7 @@
 // Definitions
 
 var possibilities = ['Rock', 'Paper', 'Scissors'];
-var options = ['Tie!', 'User wins!', 'Computer wins!'];
+var options = 0;
 var user = Math.random();
 var computer = Math.random();
 var winner = 0;
@@ -33,9 +33,13 @@ console.log('User choice: ' + comMeans(user)); // here i reused the same functio
 computer = comMeans(computer);
 user = comMeans(user);
 
+var buttonClick = document.querySelector('button');
+buttonClick.addEventListener('click', changeResults);
+
 function play(options, user, computer) {
+    options = ['Tie!', 'User wins!', 'Computer wins!'];
     if (user === 'Rock' && computer === 'Rock'){
-        winner = options[0];
+        winner == options[0];
         console.log("Tie!");
     }
     else if (user === 'Paper' && computer === 'Paper'){
@@ -74,3 +78,16 @@ function play(options, user, computer) {
 }
 
 play(winner, user, computer);
+
+// Interaction with the DOM 
+
+function changeResults(){
+    console.log('button was clicked');
+    play(winner, user, computer);
+    var userResult = document.querySelector('.user-side p');
+    var computerResult = document.querySelector('.computer-side p');
+    var winnerResult = document.querySelector('.result');
+    userResult.innerText = user;
+    computerResult.innerText = computer;
+    winnerResult.innerText = winner; 
+}

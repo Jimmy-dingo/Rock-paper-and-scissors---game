@@ -124,3 +124,16 @@ function play(options, user, computer) {
 }
 
 play(winner, user, computer);
+
+// Do it again "tana na na nanana"
+
+var clickButton = document.querySelector('button');
+
+function doItAgain(){
+    if (clickButton){
+        location.reload(); 
+    }
+};
+
+clickButton.addEventListener('click', doItAgain);
+

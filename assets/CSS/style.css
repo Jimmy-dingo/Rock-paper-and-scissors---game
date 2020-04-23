@@ -20,7 +20,7 @@ section {
     grid-template-rows: 1fr;
     grid-column-gap: 15px;
     grid-row-gap: 0px;
-    height: 60vh;
+    height: 70vh;
 }
 
 .user-side { 
@@ -89,6 +89,7 @@ img {
     margin-top: 60px;
     font-size: 2.4rem;
     font-weight: 600;
+    color: red;
 }
 
 .result-side p {
@@ -97,5 +98,7 @@ img {
 }
 
 .result-side .result {
+    font-size: 4rem;
     font-weight: 600;
+    color: red;
 }

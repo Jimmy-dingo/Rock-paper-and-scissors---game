@@ -1,41 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/CSS/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/CSS/style.css" />
+    <link rel="stylesheet" href="../backButton.css" />
     <title>Rock, Paper and Scissors game</title>
-</head>
-<body>
+  </head>
+
+  <body>
     <section class="container">
-        <h1>Rock, Paper and Scissors game</h1>
-        <section>
-            
-            <section class="user-side">
-                <h2>User</h2>
-                <p>user result</p>
-                <figure>
-                    <img id="user-img" src="assets/images/rock.png" alt="user-choice">
-                </figure>
-            </section>
-
-            <section class="result-side">
-                <h2>Winner</h2>
-                <p>And the winner is...</p>
-                <p class="result">result</p>
-            </section>
-
-            <section class="computer-side">
-                <h2>Computer</h2>
-                <p>computer result</p>
-                <figure>
-                    <img id="computer-img" src="assets/images/rock.png" alt="computer-choice">
-                </figure>
-            </section>
-
+      <h1>Rock, Paper and Scissors game</h1>
+      <section>
+        <section class="user-side">
+          <h2>User</h2>
+          <p>user result</p>
+          <figure>
+            <img id="user-img" src="assets/images/rock.png" alt="user-choice" />
+          </figure>
         </section>
-        <button>Do it again!</button>
+
+        <section class="result-side">
+          <h2>Winner</h2>
+          <p>And the winner is...</p>
+          <p class="result">result</p>
+        </section>
+
+        <section class="computer-side">
+          <h2>Computer</h2>
+          <p>computer result</p>
+          <figure>
+            <img
+              id="computer-img"
+              src="assets/images/rock.png"
+              alt="computer-choice"
+            />
+          </figure>
+        </section>
+      </section>
+
+      <button>Do it again!</button>
     </section>
+
+    <button class="back-btn"><p>Back to Portfolio</p></button>
     <script src="assets/script/main.js"></script>
-</body>
+    <script src="../backButton.js"></script>
+  </body>
 </html>
